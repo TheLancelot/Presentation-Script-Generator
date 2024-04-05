@@ -5,7 +5,8 @@ import os
 from pptx import Presentation
 from huggingface_hub import InferenceClient
 client = InferenceClient(
-    "mistralai/Mixtral-8x7B-Instruct-v0.1"
+    "mistralai/Mixtral-8x7B-Instruct-v0.1",
+    token=st.secrets['hf_token']
 )
 
 temperature=0.7
