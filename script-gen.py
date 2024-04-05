@@ -1,10 +1,6 @@
 import streamlit as st
 import os
 
-st.write(
-    "Has environment variables been set:",
-    os.environ["hf_token"] == st.secrets["hf_token"]
-)
 
 from pptx import Presentation
 from huggingface_hub import InferenceClient
